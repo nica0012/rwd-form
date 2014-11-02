@@ -6,49 +6,130 @@ Remember to use something like type-scale.com
 to get your font sizes
 *******************************************/
 *{
-	padding:0;
-	margin: 0;
+	padding:0px;
+	margin: 0px;
 }
 html,body{
+    background-color: #3564CC;
 
 }
+
+h1, h2{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 h1{
-
+    font-size: 3.998em;	 
+    text-align: center;
+    background-color: #213E7F;
+    font-family: 'Nobile';
+    padding-bottom: 1rem;
+    text-shadow: 0px 2px 0px #5e5e5e, 0px 5px 0px #4d4d4d, 0px 7px 0px #3c3c3c, 0px 9px 0px #2b2b2b, 3px 8px 15px rgba(0,0,0,0.1), 3px 8px 5px rgba(0,0,0,0.7);
 }
+
+
 h2{
+    font-size: 1.999em;
+    font-family: 'Josefin Sans';
+    
+    
 
 }
 p{
+    font-size: 1.414em;
+	padding: 0.1rem 3rem;
+    padding-bottom: 15px;
+    font-family: 'Poiret One'
 
+}
+
+img{
+    width: 18px;
+    
 }
 
 /*******************************************
 				Layout
 *******************************************/
 .wrapper{
-	
+    background-color: #427DFF;
+	width:1180px;
+	margin:0 auto;
+	border:1px solid #A8C3FF;
 }
 .masthead{
-	
+	background: #666;
+	color:#fff;
+	border-bottom: 15px solid #54627F;
 }
 .main{
+    width: 100%;
+	padding-left: 20px;
+    padding-bottom: 10px;
+    color: #31394A;
+    
 	
 }
 .foot{
+    background-color: #213E7F;
+    
+	color:#fff;
+	padding-top: 20px;
+	border-top: 6px solid #54627F;
 	
 }
 
 /*******************************************
 				Form Styles
 *******************************************/
-.formBox{
+.formBox, .col{
+    width: 50%;
+    clear: both;	
+	margin: 0.1 rem 0;
+    
+    
 	
 }
-.buttons{
-	
-}
+
 label{
+	width: 12rem;
+	text-align:right;
+	float:left;
+	margin: 0 3rem 0 0 ;
+	font-size: 1.2rem;
+	padding:1rem ;
+	color: #ffffff;
+    margin: 3px;
+    font-family: 'Poiret One'
+}
+
+label:hover{
+    background-color: #6796FF;
+    transition: .5s;
+
+}
+
+.buttons{
+    width: 100%;
+	padding-left: 5px;
+    
 	
+}
+input, select, textarea{
+	text-align:left;	
+	font-size: 1.2rem;
+	padding: 0.2rem 0.6rem;
+	margin: 0;
+	color: #333;
+    margin: 21px;
+}
+
+
+
+
+    
 }
 input[type=text],
 input[type=number],
@@ -64,4 +145,187 @@ input[type=reset]{
 /*******************************************
 				Image Styles
 *******************************************/
+
+
+
+
+
+
+
+/***********************************
+                        MEDIA 
+***********************************/
+@media screen and (max-width:500px){
+  
+    h2{
+    font-size: 1.2em;
+        padding-right: 1.1rem;
+        padding-bottom: .5em;
+    
+
+}
+    p{
+    font-size: 1em;
+	
+
+}
+    .wrapper{
+    background-color: #427DFF;
+	width: 90%;
+	margin:0 auto;
+	border:1px solid #333;
+}
+
+
+/*form*/
+    
+.formBox, .col{
+    width: 90%;
+    clear: both;	
+	margin: 0.1 rem 0;	
+    
+	
+}
+
+label{
+	width: 90%;
+	text-align:left;
+	float:left;
+	margin: 0 3rem 0 0 ;
+	font-size: 1.1rem;
+	padding:.4rem ;
+	color: #ffffff;
+    margin: 1px;
+}
+
+input, select, textarea{
+	text-align:left;	
+	font-size: 1rem;
+	padding: 0.2rem 0.6rem;
+	margin: 0;
+	color: #333;
+    margin: 6px;
+}
+
+}
+
+@media screen and  (min-width: 501px) and (max-width:780px){
+   
+     h2{
+    font-size: 1.4em;
+        padding-right: 1rem;
+        padding-bottom: 1em;
+    
+
+}
+    p{
+    font-size: 1em;
+	padding: 0.1rem 3rem;
+    padding-bottom: 10px;
+
+}
+    .wrapper{
+    background-color: #427DFF;
+	width: 90%;
+	margin:0 auto;
+	border:1px solid #333;
+}
+.masthead{
+	background: #666;
+	color:#fff;
+	border-bottom: 15px solid #54627F;
+}
+
+
+/*form*/
+    
+.formBox, .col{
+    width: 90%;
+    clear: both;	
+	margin: 0.1 rem 0;	
+    
+	
+}
+
+label{
+	width: 90%;
+	text-align:left;
+	float:left;
+	margin: 0 3rem 0 0 ;
+	font-size: 1.2rem;
+	padding:.4rem ;
+	color: #ffffff;
+    margin: 3px;
+}
+
+input, select, textarea{
+	text-align:left;	
+	font-size: 1.5rem;
+	padding: 0.2rem 0.6rem;
+	margin: 0;
+	color: #333;
+    margin: 10px;
+}
+
+}
+
+
+@media screen and (min-width:781px) {
+    
+         h2{
+    font-size: 2em;
+        padding-right: 1rem;
+        padding-bottom: 1em;
+    
+
+}
+    p{
+    font-size: 1.em;
+	padding: 0.1rem 3rem;
+    padding-bottom: 10px;
+
+}
+    
+    .wrapper{
+    background-color: #427DFF;
+	width:90%;
+	margin:0 auto;
+	border:1px solid #333;
+}
+
+
+
+/*form*/
+
+.formBox, .col{
+    width: 90%;
+    clear: both;	
+	margin: 0.1 rem 0;
+    
+    
+	
+}
+
+label{
+	width: 12rem;
+	text-align:right;
+	float:left;
+	margin: 0 3rem 0 0 ;
+	font-size: 1.3rem;
+	padding:1rem ;
+	color: #ffffff;
+    margin: 3px;
+}
+
+}
+input, select, textarea{
+	text-align:left;	
+	font-size: 1.2rem;
+	padding: 0.2rem 0.6rem;
+	margin: 0;
+	color: #333;
+    margin: 21px;
+}
+}
+    
 
