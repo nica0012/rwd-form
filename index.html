@@ -9,7 +9,8 @@
     <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>    
+    <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>   
     
     
     
@@ -20,10 +21,25 @@
 			<h1>Hotel + Plus</h1>
 		</header>
 		<section class="main">
-			<h2>Please fill out the form below to book with us!</h2>
-			<p>Tell us about your trip below</p>
+			<h2>The first step to your perfect getaway starts here!</h2>
+			<p>Where are you heading?<p>
 			<form name="travelForm" id="travelForm" action="#" method="post" enctype="application/x-www-form-urlencoded">
-				
+                
+                <div class="formBox">
+					<label for="name">First Name <img src="form/person-8x.png" /> </label>
+					<input type="text" name="name" id="name" placeholder="Billy" />
+				</div>
+                
+                 <div class="formBox">
+					<label for="lastname">Last Name <img src="form/person-8x.png" /> </label>
+					<input type="text" name="lastname" id="lastname" placeholder="Bob" />
+				</div>
+                
+                <div class="formBox">
+					<label for="email">Email <img src="form/envelope-closed-8x.png" /> </label>
+					<input type="text" name="email" id="email" placeholder="billy_bob@email.com" />
+				</div>
+                
 				<div class="formBox">
 					<label for="departure">Departure <img src="form/map-marker-8x.png" /> </label>
 					<input type="text" name="departure" id="departure" placeholder="departure city" />
@@ -42,11 +58,10 @@
 					<input type="date" name="return_dt" id="return_dt" placeholder="" />
 				</div>
 				
-				<div class="col">
-					<label for="num_adults">Number of Adults <img src="form/people-8x.png" />  </label>
-				
+				<div class="formBox">
+					<label for="num_adults">Number of Adults <img id="icon" src="form/people-8x.png"></label>
 					<select name="num_adults" id="num_adults">
-						<option value="1">1</option>
+                        <option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
 						<option value="4">4</option>
@@ -57,7 +72,6 @@
 						<option value="9">9</option>
 						<option value="10">10</option>
 					</select>
-					
 				</div>
 				
                 <div class="col price">
@@ -69,8 +83,16 @@
 					<input type="reset" name="btnReset" id="btnReset" value="Reset" />
 					<input type="submit" name="btnSubmit" id="btnSubmit" value="Submit" />
 				</div>
+                
+                 <div class=description>
+                <p>With Hotel Plus, we will find you a room that will suit your needs. All you have to do is fill out the form above, then sit back and relax. We will find you a Hotel based on the information you have given us. You don't have to do any searching, let us handle that for you. Please give us 24 hours to review your form and get back to you via email. Thank you for Choosing Hotel Plus!
+                </p>
+            </div>
+                
 			</form>
 		</section>
+        
+        
 		<footer class="foot">
 			<p>&copy; 2014 Nicastro Inc.</p>
 		</footer>
