@@ -322,6 +322,8 @@ border:1px solid #333;
 
     
 .formBox, .col{
+    margin-top: 50px;
+    margin-right: 0px;
     width: 90%;
     clear: both;
 margin: 0.1 rem 0;
@@ -350,6 +352,11 @@ color: #333;
 }
 
 }
+
+.description{
+ display: none;  
+    
+
 
 
 @media screen and (min-width:781px) {
